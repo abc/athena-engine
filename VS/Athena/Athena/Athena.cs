@@ -14,12 +14,12 @@ namespace Athena
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Game
+    public class Athena : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Game1()
+        public Athena()
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
