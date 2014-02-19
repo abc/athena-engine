@@ -18,13 +18,16 @@ namespace AthenaWin
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        static SpriteBatch spriteBatch;
+        Player Sinclair;
+        static Dictionary<String, Texture2D> Textures = new Dictionary<string, Texture2D>();
 
         public Game1()
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            Sinclair = new Player("sinclair", new Vector2(23, 32));
         }
 
         /// <summary>
@@ -36,7 +39,6 @@ namespace AthenaWin
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -44,11 +46,13 @@ namespace AthenaWin
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
+
+        
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Textures.Add("sinclair", this.Content.Load<Texture2D>("sinclair"));
             // TODO: use this.Content to load your game content here
         }
 
@@ -83,6 +87,32 @@ namespace AthenaWin
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin();
+            /*
+            spriteBatch.Draw(
+                
+                // Texture to draw
+                Textures[Sinclair.Sprite.String],
+                // Origin of texture
+                Sinclair.Sprite.Position,
+                // Where to draw (for spritesheet)
+                Sinclair.Sprite.Size,
+                // Colour
+                Sinclair.Sprite.Color,
+                // Rotation
+                Sinclair.Sprite.Rotation,
+                // Origin
+                Sinclair.Sprite.Origin,
+                // Scale
+                Sinclair.Sprite.Scale,
+                // Effects
+                Sinclair.Sprite.SpriteEffects,
+                // layer
+                Sinclair.Sprite.Layer
+                );
+                 */
+                Sinclair.Sprite.Draw(Textures, spriteBatch);
+            spriteBatch.End();
 
             // TODO: Add your drawing code here
 

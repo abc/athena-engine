@@ -43,8 +43,12 @@
   <ItemGroup>
     <Compile Include="BoundingBox.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="CollidableEntity.cs" />
+    <Compile Include="ContentDirector.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="IHasSprite.cs" />
     <Compile Include="IIsCollidable.cs" />
+    <Compile Include="Sprite.cs" />
     <Compile Include="WorldItem.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,12 +11,12 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace ACEx
 {
-    public class Character : Entity
+    interface IHasSprite
     {
-        public Character(string spriteString, Vector2 spriteSize)
-            : base(spriteString, spriteSize)
+        Texture2D Sprite
         {
-
+            get;
+            set;
         }
     }
 }

@@ -11,12 +11,23 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace ACEx
 {
-    public class Character : Entity
+    public class ContentDirector
     {
-        public Character(string spriteString, Vector2 spriteSize)
-            : base(spriteString, spriteSize)
+        public ContentDirector ()
         {
 
+        }
+
+        public ContentManager Content { get; set; }
+
+        public T GetContent<T> (string assetString)
+        {
+            return LoadContent<T>(assetString);
+        }
+
+        private T LoadContent<T> (string contentString)
+        {
+            return Content.Load<T>(contentString);
         }
     }
 }
