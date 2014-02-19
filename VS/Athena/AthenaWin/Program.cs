@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace Athena
+namespace AthenaWin
 {
 #if WINDOWS || LINUX
     /// <summary>
@@ -18,7 +18,7 @@ namespace Athena
         [STAThread]
         static void Main()
         {
-            using (var game = new Athena())
+            using (var game = new Game1())
                 game.Run();
         }
     }

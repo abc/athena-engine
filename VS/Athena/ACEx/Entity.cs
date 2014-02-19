@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Athena.Classes
+namespace ACEx
 {
-    class CollidableEntity : ICanCollide<CollidableEntity>
+    class Entity
     {
-        
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Athena.Classes
+namespace ACEx
 {
-    class Entity
+    class Player : Character
     {
     }
 }

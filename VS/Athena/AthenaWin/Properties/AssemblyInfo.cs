@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Athena")]
-[assembly: AssemblyProduct("Athena")]
+[assembly: AssemblyTitle("AthenaWin")]
+[assembly: AssemblyProduct("AthenaWin")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0718373b-685e-4f2e-9689-7028160a9328")]
+[assembly: Guid("228bf919-559e-492c-8c8b-c95c003f938e")]
 
 // Version information for an assembly consists of the following four values:
 //

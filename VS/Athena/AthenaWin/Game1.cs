@@ -7,19 +7,20 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
+using ACEx;
 #endregion
 
-namespace Athena
+namespace AthenaWin
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Athena : Game
+    public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Athena()
+        public Game1()
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
