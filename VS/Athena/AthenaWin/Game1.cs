@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
 using ACEx;
+using ACEx.UI;
 #endregion
 
 namespace AthenaWin
@@ -21,6 +22,8 @@ namespace AthenaWin
         static SpriteBatch spriteBatch;
         Player Sinclair;
         static Dictionary<String, Texture2D> Textures = new Dictionary<string, Texture2D>();
+        Button testButton;
+        SpriteFont font;
 
         public Game1()
             : base()
@@ -28,6 +31,7 @@ namespace AthenaWin
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             Sinclair = new Player("sinclair", new Vector2(23, 32));
+            testButton = new Button(50, 50, 80, 30);
         }
 
         /// <summary>
@@ -53,6 +57,8 @@ namespace AthenaWin
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Textures.Add("sinclair", this.Content.Load<Texture2D>("sinclair"));
+            Textures.Add("blank", this.Content.Load<Texture2D>("blank"));
+            font = this.Content.Load<SpriteFont>("font");
             // TODO: use this.Content to load your game content here
         }
 
@@ -75,6 +81,11 @@ namespace AthenaWin
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+            {
+                Sinclair.Sprite.FlipHorizontal();
+            }
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -88,30 +99,10 @@ namespace AthenaWin
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            /*
-            spriteBatch.Draw(
-                
-                // Texture to draw
-                Textures[Sinclair.Sprite.String],
-                // Origin of texture
-                Sinclair.Sprite.Position,
-                // Where to draw (for spritesheet)
-                Sinclair.Sprite.Size,
-                // Colour
-                Sinclair.Sprite.Color,
-                // Rotation
-                Sinclair.Sprite.Rotation,
-                // Origin
-                Sinclair.Sprite.Origin,
-                // Scale
-                Sinclair.Sprite.Scale,
-                // Effects
-                Sinclair.Sprite.SpriteEffects,
-                // layer
-                Sinclair.Sprite.Layer
-                );
-                 */
-                Sinclair.Sprite.Draw(Textures, spriteBatch);
+            // Sinclair.Sprite.Draw(Textures, spriteBatch);
+            testButton.Draw(Textures, spriteBatch);
+            // spriteBatch.DrawString(Content.Load<SpriteFont>("font"), "blabla", new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, "Hello!", new Vector2(0, 0), Color.White);
             spriteBatch.End();
 
             // TODO: Add your drawing code here

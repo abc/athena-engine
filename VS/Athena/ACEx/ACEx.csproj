@@ -42,15 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoundingBox.cs" />
-    <Compile Include="Character.cs" />
-    <Compile Include="CollidableEntity.cs" />
+    <Compile Include="Game\Character.cs" />
+    <Compile Include="Game\CollidableEntity.cs" />
     <Compile Include="ContentDirector.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="Game\Entity.cs" />
     <Compile Include="IHasSprite.cs" />
     <Compile Include="IIsCollidable.cs" />
     <Compile Include="Sprite.cs" />
-    <Compile Include="WorldItem.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="Game\WorldItem.cs" />
+    <Compile Include="Game\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

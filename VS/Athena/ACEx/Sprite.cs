@@ -44,7 +44,14 @@ namespace ACEx
 
         public void FlipHorizontal ()
         {
-            this.SpriteEffects = SpriteEffects.FlipHorizontally;
+            if (this.SpriteEffects == SpriteEffects.FlipHorizontally)
+            {
+                this.SpriteEffects = SpriteEffects.None;
+            }
+            else
+            {
+                this.SpriteEffects = SpriteEffects.FlipHorizontally;
+            }
         }
 
         public void Draw (Dictionary<string, Texture2D> dictionary, SpriteBatch spriteBatch)
