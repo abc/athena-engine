@@ -35,7 +35,16 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs" />
+    <Compile Include="Athena.cs" />
+    <Compile Include="Classes\BoundingBox.cs" />
+    <Compile Include="Classes\Character.cs" />
+    <Compile Include="Classes\CollidableEntity.cs" />
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\Tile.cs" />
+    <Compile Include="Classes\Entity.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Interfaces\ICanCollide.cs" />
+    <Compile Include="Interfaces\IHasSprite.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
