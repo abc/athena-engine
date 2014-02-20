@@ -8,7 +8,8 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-using ACEx.UI;
+using ACEx.Graphics;
+using ACEx.Game;
 
 namespace Athena
 {
@@ -19,8 +20,7 @@ namespace Athena
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteFont Calibri;
-        Texture2D Cursor;
+        BatchHandler batchHandler;
 
         public Game1()
         {
@@ -52,8 +52,7 @@ namespace Athena
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Calibri = this.Content.Load<SpriteFont>("calibri");
-            Cursor = this.Content.Load<Texture2D>("cursor");
+            batchHandler = new BatchHandler(spriteBatch);
             Blank = this.Content.Load<Texture2D>("blank");
 
             // TODO: use this.Content to load your game content here
@@ -74,7 +73,6 @@ namespace Athena
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         /// 
-        MouseState state;
         protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
@@ -96,28 +94,38 @@ namespace Athena
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-
-            bool debug = false;
-            
-
             spriteBatch.Begin();
+            batchHandler.Draw<Tile>(new Tile(2, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(2, 3, Blank));
+            batchHandler.Draw<Tile>(new Tile(2, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(2, 5, Blank));
+            batchHandler.Draw<Tile>(new Tile(2, 6, Blank));
+            batchHandler.Draw<Tile>(new Tile(3, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(3, 6, Blank));
+            batchHandler.Draw<Tile>(new Tile(5, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(5, 3, Blank));
+            batchHandler.Draw<Tile>(new Tile(5, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(5, 5, Blank));
+            batchHandler.Draw<Tile>(new Tile(5, 6, Blank));
+            batchHandler.Draw<Tile>(new Tile(6, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(7, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(7, 3, Blank));
+            batchHandler.Draw<Tile>(new Tile(7, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(7, 5, Blank));
+            batchHandler.Draw<Tile>(new Tile(7, 6, Blank));
 
-            Cursor mainCursor = new Cursor();
-            //spriteBatch.Draw(Blank, new Rectangle(50, 50, 100, 40), Color.Black);
-            //spriteBatch.Draw(Blank, new Rectangle(50, 50, 99, 39), Color.White);
-            //spriteBatch.Draw(Blank, new Rectangle(51, 51, 98, 38), Color.LightGray);
-            //spriteBatch.DrawString(Calibri, "Click me!", new Vector2(70, 58), Color.Black);
-            // spriteBatch.Draw(Blank, new Rectangle(0, 0, 50, 50), Color.White);
-            Button button = new Button(50, 50, 70, 30, Calibri, Blank, "Test");
-
-            if (mainCursor.Clicks(button))
-            {
-                button.IsClicked();
-            }
-            
-            button.Draw(spriteBatch);
-            mainCursor.Draw(Cursor, spriteBatch);
+            batchHandler.Draw<Tile>(new Tile(9, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(10, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(9, 3, Blank));
+            batchHandler.Draw<Tile>(new Tile(9, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(9, 5, Blank));
+            batchHandler.Draw<Tile>(new Tile(9, 6, Blank));
+            batchHandler.Draw<Tile>(new Tile(10, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(11, 2, Blank));
+            batchHandler.Draw<Tile>(new Tile(11, 3, Blank));
+            batchHandler.Draw<Tile>(new Tile(11, 4, Blank));
+            batchHandler.Draw<Tile>(new Tile(11, 5, Blank));
+            batchHandler.Draw<Tile>(new Tile(11, 6, Blank));
             spriteBatch.End();
             // TODO: Add your drawing code here
 
