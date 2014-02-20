@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Athena", "Athena\Athena\Ath
 EndProject
 Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "AthenaContent", "Athena\AthenaContent\AthenaContent.contentproj", "{C844B9A7-B970-490B-A74F-40820CC35171}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACEx", "ACEx\ACEx.csproj", "{8587453B-F2D5-44E5-AEBB-14C78C7F853D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{BC49A926-2226-4AC4-9EBC-5E315D9D0C32}.Release|x86.Build.0 = Release|x86
 		{C844B9A7-B970-490B-A74F-40820CC35171}.Debug|x86.ActiveCfg = Debug|x86
 		{C844B9A7-B970-490B-A74F-40820CC35171}.Release|x86.ActiveCfg = Release|x86
+		{8587453B-F2D5-44E5-AEBB-14C78C7F853D}.Debug|x86.ActiveCfg = Debug|x86
+		{8587453B-F2D5-44E5-AEBB-14C78C7F853D}.Debug|x86.Build.0 = Debug|x86
+		{8587453B-F2D5-44E5-AEBB-14C78C7F853D}.Release|x86.ActiveCfg = Release|x86
+		{8587453B-F2D5-44E5-AEBB-14C78C7F853D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
