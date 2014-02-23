@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\Character.cs" />
     <Compile Include="Game\DrawableItem.cs" />
     <Compile Include="Game\Tile.cs" />
     <Compile Include="Graphics\BatchHandler.cs" />
