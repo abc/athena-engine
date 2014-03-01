@@ -17,5 +17,7 @@ var hierarchy =
     [ "IEquatable< BoundingBox2D >", null, [
       [ "AthenaEngine.Components.BoundingBox2D", "class_athena_engine_1_1_components_1_1_bounding_box2_d.html", null ]
     ] ],
-    [ "AthenaEngine.Components.ResourceManager< T >", "class_athena_engine_1_1_components_1_1_resource_manager_3_01_t_01_4.html", null ]
+    [ "AthenaEngine.Components.Level", "class_athena_engine_1_1_components_1_1_level.html", null ],
+    [ "AthenaEngine.Components.ResourceManager< T >", "class_athena_engine_1_1_components_1_1_resource_manager_3_01_t_01_4.html", null ],
+    [ "AthenaEngine.Components.Tile", "class_athena_engine_1_1_components_1_1_tile.html", null ]
 ];
