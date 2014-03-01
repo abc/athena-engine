@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Drawing;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -23,7 +24,9 @@ namespace AthenaWin
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         ResourceManager<Texture2D> textureManager;
-        List<DrawableEntity> DrawList = new List<DrawableEntity>();
+        Level test;
+        
+        
 
         /// <summary>
         /// The actual game class constructor.
@@ -50,9 +53,7 @@ namespace AthenaWin
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
-        /// </summary>
-        
-        
+        /// </summary>   
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
@@ -61,7 +62,7 @@ namespace AthenaWin
             // TODO: use this.Content to load your game content here
 
             textureManager.Add("blank", this.Content.Load<Texture2D>("blank"));
-            DrawList.Add(new DrawableEntity(new Vector2(0, 0), new Vector2(25, 25), spriteBatch, textureManager.Get("blank")));
+            test = new Level("level1", spriteBatch, textureManager);
         }
 
         /// <summary>
@@ -95,16 +96,10 @@ namespace AthenaWin
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
             
             spriteBatch.Begin();
-
-            // Draw all DrawableEntities.
-            foreach (DrawableEntity entity in DrawList)
-            {
-                entity.Draw();
-            }
-
+            test.Draw();
             spriteBatch.End();
 
             base.Draw(gameTime);

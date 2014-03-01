@@ -104,6 +104,9 @@
     <Compile Include="Components\DrawableEntity.cs" />
     <Compile Include="Components\CollidableEntity.cs" />
     <Compile Include="Components\Entity.cs" />
+    <Compile Include="Components\Level.cs" />
+    <Compile Include="Components\LevelLoader.cs" />
+    <Compile Include="Components\Tile.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
