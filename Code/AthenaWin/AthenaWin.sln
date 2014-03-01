@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaWin", "AthenaWin\AthenaWin\AthenaWin.csproj", "{BF9129D8-0003-45B2-9912-36738056FA86}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "AthenaWinContent", "AthenaWin\AthenaWinContent\AthenaWinContent.contentproj", "{40BB74E7-9309-4A30-80E4-60EA696A8C7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaWinContent", "AthenaWin\AthenaWinContent\AthenaWinContent.contentproj", "{40BB74E7-9309-4A30-80E4-60EA696A8C7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AthenaEngine", "AthenaEngine\AthenaEngine.csproj", "{93076C5D-7086-44F1-87C5-E675ED2A5237}"
 EndProject
