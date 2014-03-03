@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28A80CFC-6F37-442D-A59E-A05D4D38F58E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AthenaEngine</RootNamespace>
+    <AssemblyName>AthenaEngine</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="MonoGame.Framework, Version=3.0.1.0, Culture=neutral">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Components\BoundingBox2D.cs" />
+    <Compile Include="Components\CollidableEntity.cs" />
+    <Compile Include="Components\DrawableEntity.cs" />
+    <Compile Include="Components\Entity.cs" />
+    <Compile Include="Components\Level.cs" />
+    <Compile Include="Components\ResourceManager.cs" />
+    <Compile Include="Components\Tile.cs" />
+    <Compile Include="Interfaces\ICollidable.cs" />
+    <Compile Include="Interfaces\IDrawable.cs" />
+    <Compile Include="Components\LevelLoader.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+</Project>
