@@ -17,8 +17,7 @@ namespace AthenaLinux
         SpriteBatch spriteBatch;
         ResourceManager<Texture2D> textureManager;
         Level test;
-        
-        
+		AthenaEngine.Camera2D Camera;
 
         /// <summary>
         /// The actual game class constructor.
@@ -55,6 +54,7 @@ namespace AthenaLinux
 
             textureManager.Add("blank", this.Content.Load<Texture2D>("Icon"));
             test = new Level("level1", spriteBatch, textureManager);
+			this.Camera = new AthenaEngine.Camera2D(this);
         }
 
         /// <summary>
@@ -89,8 +89,7 @@ namespace AthenaLinux
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
-            
-            spriteBatch.Begin();
+			spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Additive, null, null, null, null, Camera.Transform);
             test.Draw();
             spriteBatch.End();
 

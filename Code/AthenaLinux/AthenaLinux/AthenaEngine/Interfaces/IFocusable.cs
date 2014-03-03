@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -9,13 +9,11 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 
-using AthenaEngine.Components;
-
-namespace AthenaEngine.Interfaces
+namespace AthenaEngine
 {
-    interface ICollidable<T>
-    {
-        BoundingBox2D GetBounds();
-        bool CollidesWith(T type);
-    }
+	public interface IFocusable
+	{
+		Vector2 Position { get; }
+	}
 }
+
