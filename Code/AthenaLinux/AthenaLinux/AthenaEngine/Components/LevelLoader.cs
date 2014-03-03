@@ -20,19 +20,28 @@ namespace AthenaEngine.Components
         {
             List<Tile> LevelList = new List<Tile>();
 
-            StreamReader reader = new StreamReader(levelName);
+            StreamReader reader = new StreamReader("Content/" + levelName + ".apt");
 
             int i = 0;
             do
             {
                 string line = reader.ReadLine();
 
-                for (int j = 0; j < line.Length; j++)
-                {
-                    if (line[j] != ' ')
-                        LevelList.Add(new Tile(j, i)); 
-                }
-                i++;
+				if (line[0] == '#')
+				{
+					// It's a comment.
+				}
+				else
+				{
+					for (int j = 0; j < line.Length; j++)
+	                {
+	                    if (line[j] != ' ')
+						{
+							LevelList.Add(new Tile(j, i)); 
+						}
+					}
+	                i++;
+				}
             }
             while (reader.Peek() != -1);
 

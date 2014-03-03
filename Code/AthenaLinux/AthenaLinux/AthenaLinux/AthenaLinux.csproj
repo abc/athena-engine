@@ -48,7 +48,7 @@
     <None Include="Content\Icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="level1">
+    <None Include="Content\level1.apt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
