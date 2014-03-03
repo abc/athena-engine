@@ -49,10 +49,12 @@
     <Compile Include="Components\LevelLoader.cs" />
     <Compile Include="Components\Camera2D.cs" />
     <Compile Include="Interfaces\IFocusable.cs" />
+    <Compile Include="Components\Elements\Character.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Components\Elements\" />
   </ItemGroup>
 </Project>

@@ -3,7 +3,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.Input;
+
 using AthenaEngine.Components;
+using AthenaEngine.Components.Elements;
 
 namespace AthenaLinux
 {
@@ -17,7 +19,9 @@ namespace AthenaLinux
         SpriteBatch spriteBatch;
         ResourceManager<Texture2D> textureManager;
         Level test;
-		AthenaEngine.Camera2D Camera;
+		Camera2D Camera;
+		Character player;
+
 
         /// <summary>
         /// The actual game class constructor.
@@ -54,7 +58,10 @@ namespace AthenaLinux
 
             textureManager.Add("blank", this.Content.Load<Texture2D>("Icon"));
             test = new Level("level1", spriteBatch, textureManager);
-			this.Camera = new AthenaEngine.Camera2D(this);
+			this.Camera = new Camera2D(this);
+			player = new Character();
+			player.Position = new Vector2(-50, -50);
+			Camera.Focus = player;
         }
 
         /// <summary>
