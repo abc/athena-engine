@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AthenaEngine.Components
+namespace AthenaEngine.Framework.Systems
 {
     /// <summary>
     /// The ResourceManager class manages resources on behalf of the game.
@@ -24,7 +24,7 @@ namespace AthenaEngine.Components
         /// Creates a new ResourceManager to manage resources for a game.
         /// </summary>
         /// <param name="game">The game to manage resources for.</param>
-        public ResourceManager (Game game)
+        public ResourceManager(Game game)
         {
             this.game = game;
         }

@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-namespace AthenaEngine.Components
+using AthenaEngine.Framework.Gameplay;
+
+namespace AthenaEngine.Framework.Systems
 {
     /// <summary>
     /// the LevelLoader is used to load levels.

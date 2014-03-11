@@ -100,22 +100,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\BoundingBox2D.cs" />
-    <Compile Include="Components\DrawableEntity.cs" />
-    <Compile Include="Components\CollidableEntity.cs" />
-    <Compile Include="Components\Entity.cs" />
-    <Compile Include="Components\Level.cs" />
-    <Compile Include="Components\LevelLoader.cs" />
-    <Compile Include="Components\Tile.cs" />
-    <Compile Include="Interfaces\ICollidable.cs" />
-    <Compile Include="Interfaces\IDrawable.cs" />
+    <Compile Include="Framework\Camera2D.cs" />
+    <Compile Include="Framework\Interfaces\IFocusable.cs" />
+    <Compile Include="Framework\Primatives\BoundingBox2D.cs" />
+    <Compile Include="Framework\Primatives\DrawableEntity.cs" />
+    <Compile Include="Framework\Primatives\CollidableEntity.cs" />
+    <Compile Include="Framework\Primatives\Entity.cs" />
+    <Compile Include="Framework\Gameplay\Level.cs" />
+    <Compile Include="Framework\Systems\LevelLoader.cs" />
+    <Compile Include="Framework\Gameplay\Tile.cs" />
+    <Compile Include="Framework\Gameplay\Character.cs" />
+    <Compile Include="Framework\Gameplay\RPG\Inventory.cs" />
+    <Compile Include="Framework\Gameplay\RPG\Item.cs" />
+    <Compile Include="Framework\Gameplay\RPG\ItemInstance.cs" />
+    <Compile Include="Framework\Interfaces\ICollidable.cs" />
+    <Compile Include="Framework\Interfaces\IDrawable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\ResourceManager.cs" />
+    <Compile Include="Framework\Systems\ResourceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AthenaEngine.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="GameComponents\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

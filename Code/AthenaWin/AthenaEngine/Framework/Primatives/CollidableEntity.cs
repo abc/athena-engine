@@ -9,12 +9,14 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AthenaEngine.Components
+using AthenaEngine.Framework.Interfaces;
+
+namespace AthenaEngine.Framework.Primatives
 {
     /// <summary>
     /// The Entity class is used to store objects that have positions.
     /// </summary>
-    public abstract class CollidableEntity : Entity, Interfaces.ICollidable<CollidableEntity>
+    public abstract class CollidableEntity : Entity, ICollidable<CollidableEntity>
     {
         private BoundingBox2D Bounds;
         private Vector2 Position;

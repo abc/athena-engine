@@ -9,7 +9,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AthenaEngine.Components
+using AthenaEngine.Framework.Primatives;
+
+namespace AthenaEngine.Framework.Gameplay
 {
     /// <summary>
     /// A tile is used to draw levels.

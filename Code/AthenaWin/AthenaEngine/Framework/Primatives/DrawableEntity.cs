@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AthenaEngine.Components
+namespace AthenaEngine.Framework.Primatives
 {
     /// <summary>
     /// This is an entity which can be drawn.

@@ -10,7 +10,11 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-using AthenaEngine.Components;
+using AthenaEngine.Framework;
+using AthenaEngine.Framework.Gameplay;
+using AthenaEngine.Framework.Primatives;
+using AthenaEngine.Framework.Systems;
+using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaWin
 {
@@ -25,7 +29,7 @@ namespace AthenaWin
         SpriteBatch spriteBatch;
         ResourceManager<Texture2D> textureManager;
         Level test;
-        
+        Camera2D Camera;
         
 
         /// <summary>
@@ -59,8 +63,9 @@ namespace AthenaWin
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             textureManager = new ResourceManager<Texture2D>(this);
-            // TODO: use this.Content to load your game content here
-
+            
+            this.Camera = new Camera2D(this);
+            System.Console.WriteLine("Woah!");
             textureManager.Add("blank", this.Content.Load<Texture2D>("blank"));
             test = new Level("level1", spriteBatch, textureManager);
         }
@@ -97,8 +102,8 @@ namespace AthenaWin
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
-            
-            spriteBatch.Begin();
+
+            spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Additive, null, null, null, null, Camera.Transform);
             test.Draw();
             spriteBatch.End();
 

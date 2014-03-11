@@ -9,7 +9,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AthenaEngine.Components
+using AthenaEngine.Framework.Systems;
+
+namespace AthenaEngine.Framework.Gameplay
 {
     /// <summary>
     /// A Level object holds all details required to handle level drawing.
