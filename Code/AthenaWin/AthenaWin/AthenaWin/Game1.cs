@@ -30,6 +30,7 @@ namespace AthenaWin
         ResourceManager<Texture2D> textureManager;
         Level test;
         Camera2D Camera;
+        Character Player;
         
 
         /// <summary>
@@ -65,9 +66,10 @@ namespace AthenaWin
             textureManager = new ResourceManager<Texture2D>(this);
             
             this.Camera = new Camera2D(this);
-            System.Console.WriteLine("Woah!");
+            
             textureManager.Add("blank", this.Content.Load<Texture2D>("blank"));
             test = new Level("level1", spriteBatch, textureManager);
+            Player = new Character(new Vector2(-50, -100), new Vector2(500, 500), spriteBatch, this.Content.Load<Texture2D>("blank"));
         }
 
         /// <summary>
@@ -101,10 +103,11 @@ namespace AthenaWin
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            Camera.Focus = Player;
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
-
             spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Additive, null, null, null, null, Camera.Transform);
             test.Draw();
+            Player.Draw();
             spriteBatch.End();
 
             base.Draw(gameTime);

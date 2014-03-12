@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 
-namespace AthenaEngine.Interfaces
+namespace AthenaEngine.Framework.Interfaces
 {
 	public interface IFocusable
 	{

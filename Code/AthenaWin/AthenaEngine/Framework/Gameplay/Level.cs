@@ -18,7 +18,7 @@ namespace AthenaEngine.Framework.Gameplay
     /// </summary>
     public class Level
     {
-        List<Tile> TileList;
+        public List<Tile> TileList;
 
         /// <summary>
         /// Object constructor for the Level class.

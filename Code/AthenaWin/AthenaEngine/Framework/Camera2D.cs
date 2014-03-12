@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-using AthenaEngine.Interfaces;
+using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaEngine.Framework
 {

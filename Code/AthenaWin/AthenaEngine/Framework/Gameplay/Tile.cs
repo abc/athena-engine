@@ -10,17 +10,20 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 using AthenaEngine.Framework.Primatives;
+using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaEngine.Framework.Gameplay
 {
     /// <summary>
     /// A tile is used to draw levels.
     /// </summary>
-    public class Tile
+    public class Tile : IFocusable
     {
         private int X;
         private int Y;
         private bool Drawable;
+
+        public Vector2 Position { get; set; }
 
         private DrawableEntity Sprite;
 
@@ -33,6 +36,7 @@ namespace AthenaEngine.Framework.Gameplay
         {
             this.X = x;
             this.Y = y;
+            this.Position = new Vector2(this.X, this.Y);
         }
 
         /// <summary>

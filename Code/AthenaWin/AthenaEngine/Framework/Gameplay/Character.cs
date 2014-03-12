@@ -10,16 +10,19 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 using AthenaEngine.Framework.Primatives;
+using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaEngine.Framework.Gameplay
 {
     /// <summary>
     /// A character class holds important detail about each character such as their items, level, experience, skills, etc.
     /// </summary>
-    public class Character : DrawableEntity
+    public class Character : DrawableEntity, IFocusable
     {
         private int Level;
         private int Experience;
+
+        public Vector2 Position { get; set; }
 
         /// <summary>
         /// Constructor for the Character class
@@ -30,7 +33,7 @@ namespace AthenaEngine.Framework.Gameplay
         /// <param name="texture">What is the texture for the character</param>
         public Character(Vector2 position, Vector2 size, SpriteBatch spriteBatch, Texture2D texture) : base(position, size, spriteBatch, texture)
         {
-
+            this.Position = position;
         }
         /*
          * TODO: fix this
