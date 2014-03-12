@@ -16,10 +16,23 @@ namespace AthenaEngine.Framework.Primatives
     /// </summary>
     public class DrawableEntity : CollidableEntity, Interfaces.IDrawable
     {
-        private Color SpriteColor;
+        public Color SpriteColor;
         private Rectangle SpriteRectangle;
         private SpriteBatch SpriteController;
         private Texture2D SpriteTexture;
+
+        public Vector2 Position
+        {
+            get
+            {
+                return new Vector2(this.SpriteRectangle.X, this.SpriteRectangle.Y);
+            }
+            set
+            { 
+                this.SpriteRectangle.X = (int)value.X;
+                this.SpriteRectangle.Y = (int)value.Y;
+            }
+        }
 
         /// <summary>
         /// This is the constructor for the DrawableEntity class.
@@ -42,6 +55,32 @@ namespace AthenaEngine.Framework.Primatives
         public void Draw()
         {
             this.SpriteController.Draw(this.SpriteTexture, this.SpriteRectangle, this.SpriteColor);
+        }
+
+        public bool CanMove(string direction)
+        {
+            return true;
+        }
+        public bool Move(string direction)
+        {
+            switch (direction)
+            {
+                case "up":
+                    this.SpriteRectangle.Y = this.SpriteRectangle.Y - 25;
+                    break;
+                case "down":
+                    this.SpriteRectangle.Y = this.SpriteRectangle.Y + 25;
+                    break;
+                case "left":
+                    this.SpriteRectangle.X = this.SpriteRectangle.X - 25;
+                    break;
+                case "right":
+                    this.SpriteRectangle.X = this.SpriteRectangle.X + 25;
+                    break;
+                default:
+                    throw new InvalidOperationException("Invalid direction to move in");
+            }
+            return true;
         }
     }
 }

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Drawing;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -30,6 +29,7 @@ namespace AthenaWin
         ResourceManager<Texture2D> textureManager;
         Level test;
         Camera2D Camera;
+        Character Player;
         
 
         /// <summary>
@@ -68,6 +68,12 @@ namespace AthenaWin
             System.Console.WriteLine("Woah!");
             textureManager.Add("blank", this.Content.Load<Texture2D>("blank"));
             test = new Level("level1", spriteBatch, textureManager);
+            this.Player = new Character(new Vector2(100, 100), new Vector2(25, 25), spriteBatch, this.Content.Load<Texture2D>("blank"));
+            Player.SpriteColor = Color.Red;
+            Camera.Focus = Player;
+            Camera.Initialize();
+            Camera.Origin = new Vector2(0, 0);
+            Camera.Position = new Vector2(0, 0);
         }
 
         /// <summary>
@@ -86,11 +92,29 @@ namespace AthenaWin
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+            KeyboardState State = Keyboard.GetState();
+
+            if (State.IsKeyDown(Keys.W))
+            {
+                Player.Move("up");
+            }
+            if (State.IsKeyDown(Keys.A))
+            {
+                Player.Move("left");
+            }
+            if (State.IsKeyDown(Keys.S))
+            {
+                Player.Move("down");
+            }
+            if (State.IsKeyDown(Keys.D))
+            {
+                Player.Move("right");
+            }
 
             base.Update(gameTime);
         }
@@ -104,7 +128,9 @@ namespace AthenaWin
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
 
             spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.Additive, null, null, null, null, Camera.Transform);
+            // spriteBatch.Begin();
             test.Draw();
+            Player.Draw();
             spriteBatch.End();
 
             base.Draw(gameTime);

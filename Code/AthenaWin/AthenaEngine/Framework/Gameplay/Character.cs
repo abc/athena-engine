@@ -10,13 +10,14 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 using AthenaEngine.Framework.Primatives;
+using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaEngine.Framework.Gameplay
 {
     /// <summary>
     /// A character class holds important detail about each character such as their items, level, experience, skills, etc.
     /// </summary>
-    public class Character : DrawableEntity
+    public class Character : DrawableEntity, IFocusable
     {
         private int Level;
         private int Experience;
@@ -32,18 +33,5 @@ namespace AthenaEngine.Framework.Gameplay
         {
 
         }
-        /*
-         * TODO: fix this
-
-        public Move(string direction)
-        {
-
-        }
-
-        private CheckMove ()
-        {
-
-        }
-         */
     }
 }

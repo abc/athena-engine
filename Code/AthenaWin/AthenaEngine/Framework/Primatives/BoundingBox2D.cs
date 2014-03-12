@@ -16,7 +16,7 @@ namespace AthenaEngine.Framework.Primatives
     /// </summary>
     public class BoundingBox2D : IEquatable<BoundingBox2D>
     {
-        private Rectangle Bounds;
+        public Rectangle Bounds;
 
         /// <summary>
         /// Constructor for BoundingBox2D

@@ -48,7 +48,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AthenaEngine.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
@@ -102,6 +103,7 @@
   <ItemGroup>
     <Compile Include="Framework\Camera2D.cs" />
     <Compile Include="Framework\Interfaces\IFocusable.cs" />
+    <Compile Include="Framework\Interfaces\IMoveable.cs" />
     <Compile Include="Framework\Primatives\BoundingBox2D.cs" />
     <Compile Include="Framework\Primatives\DrawableEntity.cs" />
     <Compile Include="Framework\Primatives\CollidableEntity.cs" />
@@ -119,9 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Framework\Systems\ResourceManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AthenaEngine.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
