@@ -35,18 +35,5 @@ namespace AthenaEngine.Framework.Gameplay
         {
             this.Position = position;
         }
-        /*
-         * TODO: fix this
-
-        public Move(string direction)
-        {
-
-        }
-
-        private CheckMove ()
-        {
-
-        }
-         */
     }
 }

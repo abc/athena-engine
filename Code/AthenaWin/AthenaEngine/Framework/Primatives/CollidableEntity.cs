@@ -16,10 +16,10 @@ namespace AthenaEngine.Framework.Primatives
     /// <summary>
     /// The Entity class is used to store objects that have positions.
     /// </summary>
-    public abstract class CollidableEntity : Entity, ICollidable<CollidableEntity>
+    public abstract class CollidableEntity : Entity, ICollidable<CollidableEntity>, IMoveable
     {
         private BoundingBox2D Bounds;
-        private Vector2 Position;
+        protected Vector2 Position;
 
         /// <summary>
         /// Constructor for the CollidableEntity class.
@@ -59,5 +59,35 @@ namespace AthenaEngine.Framework.Primatives
             }
         }
 
+        public bool CanMove(string direction)
+        {
+            return true;
+        }
+
+        public bool Move(string direction)
+        {
+            if (CanMove(direction))
+            {
+                switch (direction)
+                {
+                    case "up":
+                        this.Bounds.Bounds.Y = this.Bounds.Bounds.Y - 25;
+                        break;
+                    case "down":
+                        this.Bounds.Bounds.Y = this.Bounds.Bounds.Y + 25;
+                        break;
+                    case "left":
+                        this.Bounds.Bounds.X = this.Bounds.Bounds.X - 25;
+                        break;
+                    case "right":
+                        this.Bounds.Bounds.X = this.Bounds.Bounds.X + 25;
+                        break;
+                    default:
+                        throw new InvalidOperationException("Invalid direction to move in");
+                }
+            }
+
+            return true;
+        }
     }
 }
