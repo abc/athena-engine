@@ -1,5 +1,5 @@
 var namespaces =
 [
-    [ "AthenaEngine", "namespace_athena_engine.html", "namespace_athena_engine" ],
+    [ "AthenaEngine", "namespace_athena_engine.html", null ],
     [ "AthenaWin", "namespace_athena_win.html", null ]
 ];
