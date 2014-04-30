@@ -1,0 +1,38 @@
+\documentclass{article}
+\title{Computing Project: ATHENA}
+\author{Kieran Armstrong, Alastair Campbell, Grant Thorburn}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\section {Group-Based Project Plan}
+\subsection{Introduction to Project}
+\paragraph{}
+Our group project, code-named ATHENA, was to create a video game. We discussed some ideas and eventually agreed to create a science-fiction themed game in the RPG genre with a turn-based combat system. We chose this because we thought that it would be an interesting setting and theme for the game and also due to our belief that it would be less complex to implement compared to a more fast-paced action-oriented game. 
+\paragraph{}
+Once we had an idea of what we wanted to achieve, we approached the project with an approach which was particularly planning-heavy, creating a very detailed project plan with accompanying charts and diagrams, alongside a broad plan of what we intended our game to be like - level design, story elements, characters, etc. We then fleshed out these basic ideas until we had, essentially, the elements of our game in terms of UI design, character sprites, the lines spoken by characters and when they would be spoken, along with a chronology of the story taking place. The game engine of our project was the biggest element of the game and received the most work on it as a result. 
+\paragraph{}
+We were aware of the scale of our project so we knew we had to keep strictly to schedules. Our project was originally planned out task by task, with an estimate of how long we thought each task would take. Resources were then assigned to the tasks appropriately. Other than human resources, we used several tools (including Microsoft Visual Studio, Microsoft Word, Microsoft Visio, Microsoft Project and Adobe Photoshop) to create or manage our project.
+\subsection{Gantt/PERT Chart and Critical Path}
+
+\section {Group-Based Development}
+\subsection {Project Planning and Approach}
+\paragraph{} % This section should cover how the group set about planning the project and what specific approach was adopted in the development or investigative project and how it progressed throughout the entire project timeline. It is focused on reflecting upon how the project was undertaken and managed after Week 4 once the project plan had been developed. (10 Marks)
+Once the project plan was created, it was largely ignored. This was probably due to the fact that it was so prescriptive about what must be done and when it must be done that it was overburdening. The project was managed on an ad-hoc basis, with work being where it was needed rather than in accordance with the plan. Due to this, certain tasks fell behind and others received the majority of the work. For example, the game engine got the largest amount of work done on it, whereas sprites, level design, sounds, etc. were nearly completely neglected. I believe that a more lightweight, agile project plan to start with would have benefit the project more than the heavyweight plan we had, allowing us to attempt to follow the plan more rather than blindly working on whatever suited at the time. 
+\subsection {Design of Deliverable} % This section should cover what approach was adopted in the design of the deliverable, including all figures and diagrams associated with the design. This section should cover the background to the area and its importance and significance. (15 Marks)
+\paragraph{}
+We adopted a very ad-hoc approach to the design of our game. Due to time constraints, it was decided that the time taken to plan the class hierarchy would be better spent implementing the classes themselves. This approach was very successful and led to a very powerful and robust, but complex, game engine. The engine itself was designed to be highly object-oriented and was written in C\# on the XNA 4.0 Framework, which turned out to be the biggest flaw in the project. XNA 4.0 was officially dropped by Microsoft and was not supported in the latest versions of Visual Studio, requiring several workarounds to be deployed to be able to use certain workflows. The project was later switched to a free implementation of XNA 4.0 called MonoGame, but this was not without flaws (for example, it was impossible to compile fonts into sprites using MonoGame). 
+\paragraph{}
+We quickly adopted a version control system (VCS) for managing our project code and files. Initially, we used \texttt{git} to manage our source code and project files. This was later switched to Microsoft's built-in Team Foundation software for better integration with the Visual Studio environment. The Team Foundation Version Control was used to control the source code version while \texttt{git} was still used to maintain shared copies of the Project file, UI plans, floorplans, diagrams, etc.
+\paragraph{}
+We planned our story in Microsoft OneNote\cite{story}. We wrote some ideas of what we wanted our story to be like, then we wrote a plot overview and finally wrote the story using a storyboard and a set of spoken dialogue for each character. We used a similar approach to design how we percieved the user interface would look. We drew diagrams in Adobe Photoshop then continuously added detail and refinement until we had an example of what the final product would look like. 
+\subsection {Development of Deliverable} % For development projects this section should include the actual prototype developed, including relevant documentation, user guide, description of deliverable and all relevant code and information needed to run the prototype. For investigative projects this section should include the actual investigation itself, how it was conducted, how the findings were analysed. (35 Marks)
+\subsection {Implementation \& Evaluation} % This section should cover how the development or area of investigation will be implemented covering areas such as relevant implementation models and approaches, how implementation will be conducted and managed, as well as key areas to be addressed. In addition, this section should cover how the development or area of investigation was or will be evaluated, highlighting the evaluation process and different forms of evaluation. (15 Marks)
+\begin{thebibliography}{9}
+\bibitem{story}
+
+\end{thebibliography}
+\end{document}
