@@ -20,9 +20,11 @@ We were aware of the scale of our project so we knew we had to keep strictly to 
 
 \section {Group-Based Development}
 \subsection {Project Planning and Approach}
-\paragraph{} % This section should cover how the group set about planning the project and what specific approach was adopted in the development or investigative project and how it progressed throughout the entire project timeline. It is focused on reflecting upon how the project was undertaken and managed after Week 4 once the project plan had been developed. (10 Marks)
+\paragraph{}
+% This section should cover how the group set about planning the project and what specific approach was adopted in the development or investigative project and how it progressed throughout the entire project timeline. It is focused on reflecting upon how the project was undertaken and managed after Week 4 once the project plan had been developed. (10 Marks)
 Once the project plan was created, it was largely ignored. This was probably due to the fact that it was so prescriptive about what must be done and when it must be done that it was overburdening. The project was managed on an ad-hoc basis, with work being where it was needed rather than in accordance with the plan. Due to this, certain tasks fell behind and others received the majority of the work. For example, the game engine got the largest amount of work done on it, whereas sprites, level design, sounds, etc. were nearly completely neglected. I believe that a more lightweight, agile project plan to start with would have benefit the project more than the heavyweight plan we had, allowing us to attempt to follow the plan more rather than blindly working on whatever suited at the time.
-\subsection {Design of Deliverable} % This section should cover what approach was adopted in the design of the deliverable, including all figures and diagrams associated with the design. This section should cover the background to the area and its importance and significance. (15 Marks)
+\subsection {Design of Deliverable}
+% This section should cover what approach was adopted in the design of the deliverable, including all figures and diagrams associated with the design. This section should cover the background to the area and its importance and significance. (15 Marks)
 \paragraph{}
 We adopted a mostly ad-hoc approach to the design of our game. Due to time constraints, it was decided that the time taken to plan the class hierarchy would be better spent implementing the classes themselves. This approach was very successful and led to a very powerful and robust, but complex, game engine. The engine itself was designed to be highly object-oriented and was written in C\# on the XNA 4.0 Framework, which turned out to be the biggest flaw in the project. XNA 4.0 was officially dropped by Microsoft and was not supported in the latest versions of Visual Studio, requiring several workarounds to be deployed to be able to use certain workflows. The project was later switched to a free implementation of XNA 4.0 called MonoGame, but this was not without flaws (for example, it was impossible to compile fonts into sprites using MonoGame). However, most elements of our game, such as the story, user interface and sprites were planned and designed prior to implementation.
 \paragraph{}
@@ -35,8 +37,12 @@ Similarly, we planned our user interface and character designs in Adobe Photosho
 The same method was used for level design. Simple sketches of how the levels should look were created, and then the designs were digitized using Microsoft Visio. 
 \paragraph{}
 The game engine used a slightly different design method. Rather than planning progressively how we wanted it to be, we had a very strong idea of what would be needed, allowing us to forego the more formal design process used for other game elements. We created a very strong object-oriented structure in Microsoft Visual Studio itself, rather than planning it using a modelling system such as UML first. This approach was chosen due to the fact that it would take far longer to do in UML first and we had very limited time for this very ambitious project.
-\subsection {Development of Deliverable} % For development projects this section should include the actual prototype developed, including relevant documentation, user guide, description of deliverable and all relevant code and information needed to run the prototype. For investigative projects this section should include the actual investigation itself, how it was conducted, how the findings were analysed. (35 Marks)
+\subsection {Development of Deliverable}
+% For development projects this section should include the actual prototype developed, including relevant documentation, user guide, description of deliverable and all relevant code and information needed to run the prototype. For investigative projects this section should include the actual investigation itself, how it was conducted, how the findings were analysed. (35 Marks)
 \subsubsection{Description of Deliverable}
+\paragraph{}
+The prototype is mostly comprised of the game engine. Our engine is a very strong class-based inheritance structure featuring objects to draw many types of entity and handles them in a very reliable way, using interfaces to ensure compliance. Our prototype solution also features a test suite to attempt code regressions. To run our prototype, you require a recent version (2010 or later) of Microsoft Visual Studio. To compile the prototype you will need a copy of the latest build of MonoGame (version 3.2 at time of writing) 
+\subsubsection{Deliverable Features}
 \paragraph{}
 Our prototype is very unfinished. The features that we have implemented are:
 \begin{itemize}
@@ -50,9 +56,15 @@ Our prototype is very unfinished. The features that we have implemented are:
 \item A camera system that tweens to the focused object and allows zoom, rotation, etc.
 \item Several helper classes which add to the framework (for handling graphics, fonts, etc.)
 \item Code reflection in game objects (For example, triggers written in C\# which trigger when a player walks on them)
+\item Limited user-interface components - buttons can be displayed, but they are only for show currently.
 \end{itemize}
 
 Features which we have not yet implemented, but plan to:
-
-
-\subsection {Implementation \& Evaluation} % This section should cover how the development or area of investigation will be implemented covering areas such as relevant implementation models and approaches, how implementation will be conducted and managed, as well as key areas to be addressed. In addition, this section should cover how the development or area of investigation was or will be evaluated, highlighting the evaluation process and different forms of evaluation. (15 Marks)
+\begin{itemize}
+\item Actual gameplay - levels need to be encoded into XML and the unfinished combat system needs finished.
+\item User Interface - More elements with interactivity (using code reflection like trigger tiles)
+\item Sounds - These aren't yet implemented but there is some groundwork done in this already such as the ResourceManager helper class.
+\end{itemize}
+\subsection {Implementation \& Evaluation}
+% This section should cover how the development or area of investigation will be implemented covering areas such as relevant implementation models and approaches, how implementation will be conducted and managed, as well as key areas to be addressed. In addition, this section should cover how the development or area of investigation was or will be evaluated, highlighting the evaluation process and different forms of evaluation. (15 Marks)
+\end{document}
