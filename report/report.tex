@@ -76,8 +76,41 @@ Our group utilised an Agile Methodology, agile methodolgy promotes adaptive plan
 Class diagrams are very useful tool during development, we decided not to use class diagrams. We thought that if we never implemented class diagrams that it would reduce development time. this did have the desired effect however if we implemented class diagram the development time may have been reduced. The  output however had the same effect the only flaw was some time may have been lost. 
 \paragraph{}
 At the start of the project we implemented planning first approach, this wasted alot of time as we never followed the plan. We believe that if we utilised an agile methodology from the begining we would could've put the time that was wasted to a better cause.
+\subsubsection{Key areas addressed}
+\paragraph{}
+We split our project implementation into five main parts - the game engine, the story script, the graphical design, the sound design and the level design.
+\subparagraph{Game Engine}
+This involved planning and writing classes to work together as part of our game to support all of the necessary gameplay features. The key features of the Game Engine are: 
+\begin{itemize}
+\item Programming Movement Logic - player movement and npc movement
+\item Programming RPG Elements - this includes - levelling, character stats etc.
+\item Programming Collision Detection - players interaction with level
+\item Programming Graphic Handler - this includes Textures, Sprite Sheets etc.
+\item Programming Story Handler - handles story elements
+\item Programming Level generator - converts XML documents into levels 
+\item Programming Encounters - triggers battles encounters, triggers story encounters.   
+\item Programming Battle System - this includes damage recieved/taken, item usage etc.
+\item Programming Sound Handler - this includes background music, battle music and sound effects 
+\end{itemize}
+\subparagraph{Story Script}
+This involved writing the story, dialogue and how the story would progress. during the planning we decided how our story would progress. We also decided on character names and what characteristics they had. We also decided that we wanted our game to have multiple ending depending on user interaction with our game so we thought of 3 endings: good, evil and neutral. 
+\subparagraph{Graphical Design}
+This involved creating graphic assets such as sprites and UI elements. We firstly created sketches of what we wanted our characters and levels to look like, and then we created prototypes in Photoshop, which then became actual game assets.
+\subparagraph{Sound Design}
+This involved choosing appropriate sounds and background music. We chose appropriate sounds for our game and then we saved these as .mp3 for import to our game.
+\subparagraph{Level Design}
+This involved designing levels for the game. We sketched how we wanted our levels to look and then we digitized them in Publisher. These levels can then be written in the XML format for our level import tool.
+\subsubsection{Evaluation}
+% how the development or area of investigation was or will be evaluated, highlighting the evaluation process and different forms of evaluation.
+\paragraph{}
+% How the development will be evaluated
+This development will be evaluated by looking at the work done and based on how much of the work was completed. The game engine was the furthest into development. player movement, collision detection and drawing onto the screen were all implemented, the only things that weren't fully operational was the user interface, story elements and sound. 
+\paragraph{} 
+Although the game was never finish we done testing of the engine. We asked a third party to perform gameplay test of the prototype. where collision detection, full player movement, random encounter triggers and test sprites were drawn to the screen. They were also shown the game script and some of the graphic concept. 
+\paragraph{}
+We also applied unit testing, unit testing is performing test against self contained units such as classes and functions. We used unit test to prevent code regression (i.e change code breaking existing functionality) so when the solution was compiled, if there was any code regression the tests would fail.
+\paragraph{}
+Another technique for evaluating software is to use various testing techniques, such as white box/black box testing, top-down and bottom-up testing, etc.
 
-
- 
 
 \end{document}
