@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tileset tilesize="25">
+  <sprite>
+    <name>black</name>
+    <x>0</x>
+    <y>0</y>
+    <collides>false</collides>
+  </sprite>
+  <sprite>
+    <name>tile.diagonal</name>
+    <x>1</x>
+    <y>0</y>
+    <collides>false</collides>
+  </sprite>
+  <sprite>
+    <name>carpet.horizontal</name>
+    <x>2</x>
+    <y>0</y>
+    <collides>false</collides>
+  </sprite>
+  <sprite>
+    <name>paving.cells</name>
+    <x>2</x>
+    <y>0</y>
+    <collides>false</collides>
+  </sprite>
+</tileset>

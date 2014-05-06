@@ -1,0 +1,140 @@
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d}{\section{Athena\-Engine.\-Framework.\-Camera2\-D Class Reference}
+\label{class_athena_engine_1_1_framework_1_1_camera2_d}\index{Athena\-Engine.\-Framework.\-Camera2\-D@{Athena\-Engine.\-Framework.\-Camera2\-D}}
+}
+Inheritance diagram for Athena\-Engine.\-Framework.\-Camera2\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_athena_engine_1_1_framework_1_1_camera2_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a5cabf8628e9a3bf76d22cc4630c8b9a7}{Camera2\-D} (Game game)
+\item 
+override void \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a404974721a2e52d38a8f2a929420efcb}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+override void \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a98b0a1814f87cb1c61cae210c667c94f}{Update} (Game\-Time game\-Time)
+\item 
+bool \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_af59c31839e3b5f77266227a038c1e50c}{Is\-In\-View} (Vector2 position, Texture2\-D texture)
+\begin{DoxyCompactList}\small\item\em Determines whether the target is in view given the specified position. This can be used to increase performance by not drawing objects directly in the viewport \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a485bfef4ff5f718addc49d3eec88b0e7}{\-\_\-viewport\-Height}
+\item 
+float \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_af7ec19f2874045d548709d58f8778dd9}{\-\_\-viewport\-Width}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_aaf39bcf56a3bd9c8eabdfd8032acda3b}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a63df0638761ca57e15812d6ca118236a}{Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_ad9aebbc898c0b225e77a662b0bef7d35}{Origin}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a253bc4fde9f95baeedc7e18b5633f62f}{Scale}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a9ee30e517de34f7fb5d3675d28f2c9ce}{Screen\-Center}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Matrix \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a8cd757e58b30a4c4d57778ff2d1a79f2}{Transform}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{interface_athena_engine_1_1_framework_1_1_interfaces_1_1_i_focusable}{I\-Focusable} \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a2b2773d78bddeccbe6a01fb90fefecd5}{Focus}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_athena_engine_1_1_framework_1_1_camera2_d_a5471ca8fa9dd3a511a4669ebb2db9784}{Move\-Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a5cabf8628e9a3bf76d22cc4630c8b9a7}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Camera2\-D@{Camera2\-D}}
+\index{Camera2\-D@{Camera2\-D}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Camera2\-D}]{\setlength{\rightskip}{0pt plus 5cm}Athena\-Engine.\-Framework.\-Camera2\-D.\-Camera2\-D (
+\begin{DoxyParamCaption}
+\item[{Game}]{game}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a5cabf8628e9a3bf76d22cc4630c8b9a7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a404974721a2e52d38a8f2a929420efcb}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}override void Athena\-Engine.\-Framework.\-Camera2\-D.\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a404974721a2e52d38a8f2a929420efcb}
+
+
+
+
+Called when the Game\-Component needs to be initialized. \hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_af59c31839e3b5f77266227a038c1e50c}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Is\-In\-View@{Is\-In\-View}}
+\index{Is\-In\-View@{Is\-In\-View}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Is\-In\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool Athena\-Engine.\-Framework.\-Camera2\-D.\-Is\-In\-View (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{position, }
+\item[{Texture2\-D}]{texture}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_af59c31839e3b5f77266227a038c1e50c}
+
+
+Determines whether the target is in view given the specified position. This can be used to increase performance by not drawing objects directly in the viewport 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position.\\
+\hline
+{\em texture} & The texture.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is in view\mbox{]} \mbox{[}the specified position\mbox{]}; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a98b0a1814f87cb1c61cae210c667c94f}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Update@{Update}}
+\index{Update@{Update}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Athena\-Engine.\-Framework.\-Camera2\-D.\-Update (
+\begin{DoxyParamCaption}
+\item[{Game\-Time}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a98b0a1814f87cb1c61cae210c667c94f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a485bfef4ff5f718addc49d3eec88b0e7}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!\-\_\-viewport\-Height@{\-\_\-viewport\-Height}}
+\index{\-\_\-viewport\-Height@{\-\_\-viewport\-Height}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{\-\_\-viewport\-Height}]{\setlength{\rightskip}{0pt plus 5cm}float Athena\-Engine.\-Framework.\-Camera2\-D.\-\_\-viewport\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a485bfef4ff5f718addc49d3eec88b0e7}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_af7ec19f2874045d548709d58f8778dd9}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!\-\_\-viewport\-Width@{\-\_\-viewport\-Width}}
+\index{\-\_\-viewport\-Width@{\-\_\-viewport\-Width}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{\-\_\-viewport\-Width}]{\setlength{\rightskip}{0pt plus 5cm}float Athena\-Engine.\-Framework.\-Camera2\-D.\-\_\-viewport\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_af7ec19f2874045d548709d58f8778dd9}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a2b2773d78bddeccbe6a01fb90fefecd5}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Focus@{Focus}}
+\index{Focus@{Focus}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Focus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Focusable} Athena\-Engine.\-Framework.\-Camera2\-D.\-Focus\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a2b2773d78bddeccbe6a01fb90fefecd5}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a5471ca8fa9dd3a511a4669ebb2db9784}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Move\-Speed@{Move\-Speed}}
+\index{Move\-Speed@{Move\-Speed}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Move\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}float Athena\-Engine.\-Framework.\-Camera2\-D.\-Move\-Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a5471ca8fa9dd3a511a4669ebb2db9784}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_ad9aebbc898c0b225e77a662b0bef7d35}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Origin@{Origin}}
+\index{Origin@{Origin}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Origin}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 Athena\-Engine.\-Framework.\-Camera2\-D.\-Origin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_ad9aebbc898c0b225e77a662b0bef7d35}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_aaf39bcf56a3bd9c8eabdfd8032acda3b}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Position@{Position}}
+\index{Position@{Position}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Position}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 Athena\-Engine.\-Framework.\-Camera2\-D.\-Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_aaf39bcf56a3bd9c8eabdfd8032acda3b}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a63df0638761ca57e15812d6ca118236a}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}float Athena\-Engine.\-Framework.\-Camera2\-D.\-Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a63df0638761ca57e15812d6ca118236a}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a253bc4fde9f95baeedc7e18b5633f62f}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Scale@{Scale}}
+\index{Scale@{Scale}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Scale}]{\setlength{\rightskip}{0pt plus 5cm}float Athena\-Engine.\-Framework.\-Camera2\-D.\-Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a253bc4fde9f95baeedc7e18b5633f62f}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a9ee30e517de34f7fb5d3675d28f2c9ce}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Screen\-Center@{Screen\-Center}}
+\index{Screen\-Center@{Screen\-Center}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Screen\-Center}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 Athena\-Engine.\-Framework.\-Camera2\-D.\-Screen\-Center\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a9ee30e517de34f7fb5d3675d28f2c9ce}
+\hypertarget{class_athena_engine_1_1_framework_1_1_camera2_d_a8cd757e58b30a4c4d57778ff2d1a79f2}{\index{Athena\-Engine\-::\-Framework\-::\-Camera2\-D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}!Transform@{Transform}}
+\index{Transform@{Transform}!AthenaEngine::Framework::Camera2D@{Athena\-Engine\-::\-Framework\-::\-Camera2\-D}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}Matrix Athena\-Engine.\-Framework.\-Camera2\-D.\-Transform\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_athena_engine_1_1_framework_1_1_camera2_d_a8cd757e58b30a4c4d57778ff2d1a79f2}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Athena/\-Athena/\-Athena\-Engine/\-Framework/\hyperlink{_camera2_d_8cs}{Camera2\-D.\-cs}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level tileset="pokemon" tilesize="25" rowlength="3">
+  <tile>
+    <sprite>paving.cells</sprite>
+  </tile>
+  <tile>
+    <sprite>paving.cells</sprite>
+  </tile>
+  <tile>
+    <sprite>black</sprite>
+  </tile>
+  <tile>
+    <sprite>black</sprite>
+  </tile>
+</level>

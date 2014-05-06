@@ -1,0 +1,95 @@
+\hypertarget{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4}{\section{Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$ Class Template Reference}
+\label{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4}\index{Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$@{Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$}}
+}
+
+
+The Resource\-Manager class manages resources on behalf of the game.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_a9fb0dd52f57d2fe7f5e11b1301834be0}{Resource\-Manager} (Game game)
+\begin{DoxyCompactList}\small\item\em Creates a new Resource\-Manager to manage resources for a game. \end{DoxyCompactList}\item 
+T \hyperlink{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ab14238d641179c601312edb3da71d6c2}{Add} (string key, T resource)
+\begin{DoxyCompactList}\small\item\em Add a new resource to the resources list maintained by the Resource\-Manager. \end{DoxyCompactList}\item 
+T \hyperlink{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ac9cb82fe6115f57d637dc443e9765459}{Get} (string key)
+\begin{DoxyCompactList}\small\item\em Gets the resource stored associated with a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Resource\-Manager class manages resources on behalf of the game. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of resource to manage\\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_a9fb0dd52f57d2fe7f5e11b1301834be0}{\index{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}!Resource\-Manager@{Resource\-Manager}}
+\index{Resource\-Manager@{Resource\-Manager}!AthenaEngine::Framework::Systems::ResourceManager< T >@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}}
+\subsubsection[{Resource\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$.Resource\-Manager (
+\begin{DoxyParamCaption}
+\item[{Game}]{game}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_a9fb0dd52f57d2fe7f5e11b1301834be0}
+
+
+Creates a new Resource\-Manager to manage resources for a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game to manage resources for.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ab14238d641179c601312edb3da71d6c2}{\index{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!AthenaEngine::Framework::Systems::ResourceManager< T >@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}T Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$.Add (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{T}]{resource}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ab14238d641179c601312edb3da71d6c2}
+
+
+Add a new resource to the resources list maintained by the Resource\-Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to associate the resource with\\
+\hline
+{\em resource} & The resource associated with the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ac9cb82fe6115f57d637dc443e9765459}{\index{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}!Get@{Get}}
+\index{Get@{Get}!AthenaEngine::Framework::Systems::ResourceManager< T >@{Athena\-Engine\-::\-Framework\-::\-Systems\-::\-Resource\-Manager$<$ T $>$}}
+\subsubsection[{Get}]{\setlength{\rightskip}{0pt plus 5cm}T Athena\-Engine.\-Framework.\-Systems.\-Resource\-Manager$<$ T $>$.Get (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_athena_engine_1_1_framework_1_1_systems_1_1_resource_manager_3_01_t_01_4_ac9cb82fe6115f57d637dc443e9765459}
+
+
+Gets the resource stored associated with a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to find the resource associated with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Athena/\-Athena/\-Athena\-Engine/\-Framework/\-Systems/\hyperlink{_resource_manager_8cs}{Resource\-Manager.\-cs}\end{DoxyCompactItemize}
