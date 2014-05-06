@@ -18,6 +18,9 @@ using AthenaEngine.Framework.Systems;
 
 namespace AthenaEngine.Framework.UI
 {
+	/// <summary>
+	/// User interface button.
+	/// </summary>
     public class UIButton
     {
         private SpriteBatch Batch;
@@ -28,7 +31,28 @@ namespace AthenaEngine.Framework.UI
         public Level Level;
 
         private Rectangle SpriteRect;
-
+		
+		/// <summary>
+		/// Initializes a new instance of the <see cref="AthenaEngine.Framework.UI.UIButton"/> class.
+		/// </summary>
+		/// <param name='rectangle'>
+		/// Rectangle.
+		/// </param>
+		/// <param name='spriteBatch'>
+		/// Sprite batch.
+		/// </param>
+		/// <param name='texture'>
+		/// Texture.
+		/// </param>
+		/// <param name='color'>
+		/// Color.
+		/// </param>
+		/// <param name='label'>
+		/// Label.
+		/// </param>
+		/// <param name='font'>
+		/// Font.
+		/// </param>
         public UIButton (Rectangle rectangle, SpriteBatch spriteBatch, Texture2D texture, Color color, string label, SpriteFont font)
         {
             this.SpriteRect = rectangle;
@@ -38,7 +62,10 @@ namespace AthenaEngine.Framework.UI
             this.Label = label;
             this.Font = font;
         }
-
+		
+		/// <summary>
+		/// Draw this instance.
+		/// </summary>
         public void Draw ()
         {
             // DrawableEntity Base = new DrawableEntity(new Vector2(SpriteRect.X, SpriteRect.Y), new Vector2(SpriteRect.Width, SpriteRect.Height), Batch, Texture, Level);

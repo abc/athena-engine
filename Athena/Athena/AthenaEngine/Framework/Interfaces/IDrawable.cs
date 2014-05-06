@@ -11,8 +11,14 @@ using Microsoft.Xna.Framework.Media;
 
 namespace AthenaEngine.Framework.Interfaces
 {
+	/// <summary>
+	/// I drawable.
+	/// </summary>
     interface IDrawable
     {
+		/// <summary>
+		/// Draw this instance.
+		/// </summary>
         void Draw();
     }
 }

@@ -30,7 +30,16 @@ namespace AthenaEngine.Framework.Systems
                 this.Collides = collides;
             }
         }
-
+		
+		/// <summary>
+		/// Load the specified levelName and level.
+		/// </summary>
+		/// <param name='levelName'>
+		/// Level name.
+		/// </param>
+		/// <param name='level'>
+		/// Level.
+		/// </param>
         public static List<Tile> Load (string levelName, Level level)
         {
             List<Tile> LevelList = new List<Tile>();
@@ -77,7 +86,16 @@ namespace AthenaEngine.Framework.Systems
 
             return LevelList;
         }
-
+		
+		/// <summary>
+		/// Loads the sprite set.
+		/// </summary>
+		/// <returns>
+		/// The sprite set.
+		/// </returns>
+		/// <param name='spriteSet'>
+		/// Sprite set.
+		/// </param>
         public static Dictionary<string, Sprite> LoadSpriteSet (string spriteSet)
         {
             Dictionary<string, Sprite> SpriteList = new Dictionary<string, Sprite>();

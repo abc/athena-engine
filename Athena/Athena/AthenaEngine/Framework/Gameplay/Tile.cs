@@ -66,7 +66,13 @@ namespace AthenaEngine.Framework.Gameplay
             }
             
         }
-
+		
+		/// <summary>
+		/// Fires the trigger.
+		/// </summary>
+		/// <param name='args'>
+		/// Arguments.
+		/// </param>
         public void FireTrigger (object[] args)
         {
             if (this.HasTrigger)
@@ -75,7 +81,13 @@ namespace AthenaEngine.Framework.Gameplay
             }
             
         }
-
+		
+		/// <summary>
+		/// Adds the trigger.
+		/// </summary>
+		/// <param name='triggerName'>
+		/// Trigger name.
+		/// </param>
         public void AddTrigger(string triggerName)
         {
             Type type = typeof(Triggers);

@@ -11,8 +11,17 @@ using Microsoft.Xna.Framework.Media;
 
 namespace AthenaEngine.Framework.Interfaces
 {
+	/// <summary>
+	/// I focusable.
+	/// </summary>
 	public interface IFocusable
 	{
+		/// <summary>
+		/// Gets the position.
+		/// </summary>
+		/// <value>
+		/// The position.
+		/// </value>
 		Vector2 Position { get; }
 	}
 }

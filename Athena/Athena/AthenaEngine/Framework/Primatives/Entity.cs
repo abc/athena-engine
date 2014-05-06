@@ -23,7 +23,13 @@ namespace AthenaEngine.Framework.Primatives
     {
         protected Vector2 Position;
         protected Vector2 Size;
-
+		
+		/// <summary>
+		/// Gets or sets the rectangle.
+		/// </summary>
+		/// <value>
+		/// The rectangle.
+		/// </value>
         protected Rectangle Rectangle
         {
             get
@@ -81,7 +87,7 @@ namespace AthenaEngine.Framework.Primatives
                 Size.Y = value;
             }
         }
-
+		
         protected void Move(int direction)
         {
             switch (direction)

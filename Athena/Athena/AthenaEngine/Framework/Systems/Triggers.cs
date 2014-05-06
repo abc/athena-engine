@@ -5,12 +5,22 @@ using System.Text;
 
 namespace AthenaEngine.Framework.Systems
 {
+	/// <summary>
+	/// Triggers.
+	/// </summary>
     class Triggers
     {
+		/// <summary>
+		/// This was used to test
+		/// </summary>
         public static void test ()
         {
             System.Console.WriteLine("You stepped on a tile.");
         }
+		
+		/// <summary>
+		/// Random encounter test
+		/// </summary>
         public static void encounter()
         {
 

@@ -13,6 +13,9 @@ using AthenaEngine.Framework.Primatives;
 
 namespace AthenaEngine.Framework.Interfaces
 {
+	/// <summary>
+	/// I collidable.
+	/// </summary>
     interface ICollidable<T>
     {
         bool CollidesWith(T type);

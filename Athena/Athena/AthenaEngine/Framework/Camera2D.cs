@@ -12,18 +12,32 @@ using AthenaEngine.Framework.Interfaces;
 
 namespace AthenaEngine.Framework
 {
+	/// <summary>
+	/// Camera2D
+	/// </summary>
 	public class Camera2D : GameComponent
 	{
 		private Vector2 _position;
 		protected float _viewportHeight;
 		protected float _viewportWidth;
 
-
+		/// <summary>
+		/// Initializes a new instance of the <see cref="AthenaEngine.Framework.Camera2D"/> class.
+		/// </summary>
+		/// <param name='game'>
+		/// Game.
+		/// </param>
 		public Camera2D (Game game) : base (game)
 		{
 
 		}
 
+		/// <summary>
+		/// Gets or sets the position.
+		/// </summary>
+		/// <value>
+		/// The position.
+		/// </value>
 		public Vector2 Position {
 			get { return _position; }
 			set { _position = value; }
@@ -37,9 +51,10 @@ namespace AthenaEngine.Framework
 		public IFocusable Focus { get; set; }
 		public float MoveSpeed { get; set; }
 
-		/// <summary>
+	/// <summary>
     /// Called when the GameComponent needs to be initialized. 
     /// </summary>
+    /// 
     public override void Initialize()
     {
         _viewportWidth = Game.GraphicsDevice.Viewport.Width;
@@ -52,6 +67,12 @@ namespace AthenaEngine.Framework
         base.Initialize();
     }
 
+		/// <summary>
+		/// Update the specified gameTime.
+		/// </summary>
+		/// <param name='gameTime'>
+		/// Game time.
+		/// </param>
     public override void Update(GameTime gameTime)
     {
         // Create the Transform used by any

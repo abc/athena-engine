@@ -20,9 +20,9 @@ Inheritance diagram for Athena\-Engine.\-Framework.\-Primatives.\-Collidable\-En
 bool \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a32ca7c9bf12863dd4055d0e0b639440f}{Collides\-With} (\hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity}{Collidable\-Entity} entity)
 \begin{DoxyCompactList}\small\item\em Check if the \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity}{Collidable\-Entity} collides with another \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity}{Collidable\-Entity}. \end{DoxyCompactList}\item 
 bool \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a85bb43d3bcd4296805585848a08bc3cf}{Can\-Move} (int direction)
-\item 
+\begin{DoxyCompactList}\small\item\em Determines whether this instance can move the specified direction. \end{DoxyCompactList}\item 
 bool \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a1032a7744ff1323f091806b3ccfcbd90}{Move} (int direction)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Move the specified direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -72,6 +72,18 @@ Constructor for the \hyperlink{class_athena_engine_1_1_framework_1_1_primatives_
 \item[{int}]{direction}
 \end{DoxyParamCaption}
 )}}\label{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a85bb43d3bcd4296805585848a08bc3cf}
+
+
+Determines whether this instance can move the specified direction. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance can move the specified direction; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & If set to {\ttfamily true} direction. \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a32ca7c9bf12863dd4055d0e0b639440f}{\index{Athena\-Engine\-::\-Framework\-::\-Primatives\-::\-Collidable\-Entity@{Athena\-Engine\-::\-Framework\-::\-Primatives\-::\-Collidable\-Entity}!Collides\-With@{Collides\-With}}
 \index{Collides\-With@{Collides\-With}!AthenaEngine::Framework::Primatives::CollidableEntity@{Athena\-Engine\-::\-Framework\-::\-Primatives\-::\-Collidable\-Entity}}
 \subsubsection[{Collides\-With}]{\setlength{\rightskip}{0pt plus 5cm}bool Athena\-Engine.\-Framework.\-Primatives.\-Collidable\-Entity.\-Collides\-With (
@@ -98,6 +110,15 @@ Returns true if it does collide, otherwise false.
 \item[{int}]{direction}
 \end{DoxyParamCaption}
 )}}\label{class_athena_engine_1_1_framework_1_1_primatives_1_1_collidable_entity_a1032a7744ff1323f091806b3ccfcbd90}
+
+
+Move the specified direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & If set to {\ttfamily true} direction. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}

@@ -68,6 +68,15 @@ namespace AthenaEngine.Framework.Primatives
             }
         }
 
+		/// <summary>
+		/// Determines whether this instance can move the specified direction.
+		/// </summary>
+		/// <returns>
+		/// <c>true</c> if this instance can move the specified direction; otherwise, <c>false</c>.
+		/// </returns>
+		/// <param name='direction'>
+		/// If set to <c>true</c> direction.
+		/// </param>
         public bool CanMove(int direction)
         {
             BoundingBox2D NewPosition = new BoundingBox2D(new Vector2(this.Bounds.X, this.Bounds.Y), new Vector2(this.Bounds.Width, this.Bounds.Height));
@@ -105,7 +114,13 @@ namespace AthenaEngine.Framework.Primatives
             return true;
 
         }
-
+		
+		/// <summary>
+		/// Move the specified direction.
+		/// </summary>
+		/// <param name='direction'>
+		/// If set to <c>true</c> direction.
+		/// </param>
         public bool Move(int direction)
         {
             if (CanMove(direction))
